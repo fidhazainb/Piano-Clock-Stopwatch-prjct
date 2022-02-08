@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Piano</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="piano.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clock.css">
+    
+  </head>
+  <body>
+    <nav class="piano1">
+      <nav class="stopwatch">
+      <nav class="alarm-clock">
+      <ul>
+          <li><a href="#piano" class="menu-btn">Piano</a></li>
+          <li><a href="#alarm clock" class="menu-btn">Alarm Clock</a></li>
+          <li><a href="#stopwatch" class="menu-btn">Stopwatch</a></li>
+      </ul>
+    </nav>
+    </nav>
+    </nav>
+    <div id="piano">
+      <b id="piano1">P</b>
+      <b id="piano2">I</b>
+      <b id="piano3">A</b>
+      <b id="piano4">N</b>
+      <b id="piano5">O</b>
+   </div>
+   <div class="piano">
+      <button class="white-key C5-key"></button>
+      <button class="white-key C4-key"></button>
+      <button class="black-key Db4-key"></button>
+      <button class="white-key D4-key"></button>
+      <button class="black-key Eb4-key"></button>
+      <button class="white-key E4-key"></button>
+      <button class="white-key F4-key"></button>
+      <button class="black-key Gb4-key"></button>
+      <button class="white-key G4-key"></button>
+      <button class="black-key Ab4-key"></button>
+      <button class="white-key A4-key"></button>
+      <button class="black-key Bb4-key"></button>
+      <button class="white-key B4-key"></button>
+      <button class="white-key D5-key"></button>
+      <button class="black-key Db5-key"></button>
+      <button class="white-key E5-key"></button>
+      <button class="black-key Eb5-key"></button>
+    </div>
+    <script src="piano.js"></script>
+    <br />
+    <section class="container">
+      <div id="clock"></div>
+      <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+      <div class="controls">
+          <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+          <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
+      </div>
+    </section>
+    <script src="clock.js"></script>
+    <br />
+    <div class="box" style="height: 100vh; text-align: center; background-color: #010102;">
+      <div class="wrapper" style="position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin-bottom: 120px;">
+        <p style="position: relative;
+        display: inline-block;
+        color: #ffffff;
+        z-index: 9999;
+        font-size: 45px;
+        margin-bottom: 120px;">
+          <span class="mins">00</span>:
+          <span class="seconds">00</span>:
+          <span class="tens">00</span>
+        </p>
+        <br>
+        <button class="btn-start" style="background-color: #050507;
+        padding: 10px 38px;
+        border: 1px solid #A9A9A9;
+        border-radius: 28px;
+        color: #fff;
+        transition: all .2s ease;
+        outline: 0;
+        margin-right: 20px;">Start</button>
+        <button class="btn-stop" style="background-color: #050507;
+        padding: 10px 38px;
+        border: 1px solid #A9A9A9;
+        border-radius: 28px;
+        color: #fff;
+        transition: all .2s ease;
+        outline: 0;
+        margin-right: 20px;">Stop</button>
+        <button class="btn-reset" style="background-color: #050507;
+        padding: 10px 38px;
+        border: 1px solid #A9A9A9;
+        border-radius: 28px;
+        color: #fff;
+        transition: all .2s ease;
+        outline: 0;">Reset</button>
+      </div>
+    </div>
+    <script src="stopwatch.js"></script>
+
+  </body>
+</html>
+
+  

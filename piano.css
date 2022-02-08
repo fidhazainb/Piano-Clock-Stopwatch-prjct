@@ -1,0 +1,169 @@
+
+nav.piano1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 80px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.6);
+  border-bottom: 1px solid #fff ;
+  z-index: 10;
+}
+nav.piano1 ul{
+  list-style: none;
+  float:left;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+}
+nav.piano1 ul li a{
+  line-height: 60px;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav.piano1 ul li a:hover{
+  background: rgba(0,0,0,0.7);
+  border-radius: 6px;
+}
+/* section{
+  width: 100%;
+  height: 100vh;
+  background:url(bg.jpg) ;
+  background-size: cover;
+  background-position: center;
+} */
+/*piano styling*/
+.piano #keys{
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  width: 100%;
+  height: 55%;
+}
+
+#piano{
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 30%;
+  left: 0%;
+  font-size: 120px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#piano1{background-color: white;}
+#piano2{background-color: white;}
+#piano3{background-color: white;}
+#piano4{background-color: white;}
+#piano5{background-color: white;}
+
+
+.piano {
+  text-align: center;
+  position: relative;
+  margin-left: -105px;
+  top: 150px;
+}
+
+.white-key {
+  width: 43px;
+  height: 170px;
+  background-color: #FFF;
+  border: 4px solid black;
+  border-radius: 0 0 6px 6px;
+  margin-left: -4px;
+  margin-top: 250px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  left: 55px;
+  
+}
+
+.white-key.active {
+  background-color: #C0C0C0;
+}
+
+.black-key {
+  position: absolute;
+  width: 27px;
+  height: 100px;
+  margin-top: 250px;
+  background-image: linear-gradient(#000000, #303030);
+  border: 3px solid black;
+  border-radius: 0 0 2px 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #101010);
+}
+
+
+/* .Db4-key {
+  left: 22px;
+} */
+
+/* .Eb4-key {
+  left: 58px;
+}
+
+.Gb4-key {
+  left: 130px;
+}
+
+.Ab4-key {
+  left: 166px;
+}
+
+.Bb4-key {
+  left: 202px;
+}
+
+.Db5-key {
+  left: 274px;
+}
+
+.Eb5-key {
+  left: 310px;
+} */
+
+.wrapper p::before{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #030303; 
+  z-index: -1;
+  border-radius: 50%;
+  left: -9%;
+  top: -118%;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes shine{
+  0%,100%{
+      box-shadow: 0px 0px 32px -12px rgba(255, 255, 255, 0.5);
+  }
+  50%{
+      box-shadow: 0px 0px 32px 3px rgba(255, 254, 250, 0.5);
+  }
+}
+button:hover,
+button:focus
+{
+  border-color: #f8f7f4;
+  color: #f5f3ef;
+  box-shadow: 0px 4px 27px -12px #fffefd;
+}
+
+
